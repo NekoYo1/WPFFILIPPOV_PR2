@@ -24,5 +24,10 @@ namespace WPFFILIPPOV_PR2
         {
             InitializeComponent();
         }
+
+        private void Schet_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
