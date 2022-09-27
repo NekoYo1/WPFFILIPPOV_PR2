@@ -22,10 +22,7 @@ namespace WPFFILIPPOV_PR2
     {
         public MainWindow()
         {
-            InitializeComponent();
-            X.Text = "5,5";
-            Y.Text = "4,3";
-            Z.Text = "2,8";
+            InitializeComponent();            
             Itog.Text = "Ст. гр. ИСП Филиппов К.П.";
         }
 
@@ -38,11 +35,8 @@ namespace WPFFILIPPOV_PR2
             Itog.Text += Environment.NewLine + "Y =" + y.ToString();
             double z = double.Parse(Z.Text);
             Itog.Text += Environment.NewLine + "Z =" + z.ToString();
-            double a = Math.Tan(x + y) * Math.Tan(x + y);
-            double b = Math.Exp(y - z);
-            double c = Math.Sqrt(Math.Cos(x * x) + Math.Sin(z * z));
-            double u = a - b * c;
-            Itog.Text += Environment.NewLine + "Результат U = " + u.ToString();
+            double b = (x * x / z) + (x / y) - (y / z * z * z);
+            Itog.Text += Environment.NewLine + "Результат B = " + b.ToString();
         }
     }
 }
