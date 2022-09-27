@@ -26,7 +26,7 @@ namespace WPFFILIPPOV_PR2
             X.Text = "5,5";
             Y.Text = "4,3";
             Z.Text = "2,8";
-            Itog.Text = "Ст. гр. ИСП Филиппов А.А.";
+            Itog.Text = "Ст. гр. ИСП Филиппов К.П.";
         }
 
         private void Schet_Click(object sender, RoutedEventArgs e)
